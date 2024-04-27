@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/* container style */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+
+}
+
+.top-div {
+    /* background-color: lightgray; */
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.part-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+
+.products-div {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1200px;
+    gap: 50px;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item .content,
+.basket-btn {
+    position: absolute;
+    color: red;
+}
+
+.delete-btn {
+    position: absolute;
+    color: red;
+}
+
+.item .basket-btn {
+    color: green;
+}
+
+.item .basket-btn i {
+    font-size: 30px;
+
+}
+
+.item .delete-btn {
+    color: green;
+}
+
+.item .delete-btn i {
+    font-size: 30px;
+
+}
+
+
+.content h1 {
+    font-size: 20px;
+}
+
+.content p {
+    text-align: center;
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+/* bottom side */
+
+.bottom-div {
+    background-color: lightcyan;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow-y: scroll;
+
+}
+
+.icon-div {
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    bottom: 50px;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+
+
+.icon-div i:hover {
+    cursor: pointer;
+    transform: scale(1.7);
+    -webkit-transform: scale(1.7);
+    -moz-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    -o-transform: scale(1.7);
+    transition: transform 0.3s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+   -o-transition: transform 1s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
